@@ -1,0 +1,10 @@
+@import url("typography.css");
+
+body {
+
+}
+
+.site {
+    max-width: 60rem;
+    margin: 0rem auto;
+}
