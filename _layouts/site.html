@@ -1,5 +1,61 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
 
-    {{content}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TheLazyperson's Home Automatin Site</title>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+</head>
 
-{% include footer.html %}
+<body>
+
+    <header class="site">
+
+        <div class="site-header">
+            <div class="site-branding">
+                <p class="site-title">Lazy Home Automation</p>
+                <p class="site-description">It's Fun and Consuming</p>            </div>
+        </div>
+
+        <ul>
+            <li><a href="#">My Account</a></li>
+        </ul>
+
+        <form action="#" class="search" method="post">
+            <input type="text" name="search">
+            <input type="submit" value="Search" class="button Submit">
+        </form>
+        <nav class="main navigation">
+
+            <ul>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/shop/">Shop</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contacts/">Contacts</a></li>
+            </ul>
+
+        </nav>
+        <div class="basket">
+            <div class="price-total">$00.0</div>
+            <div class="items">0 Items</div>
+        </div>
+    </header>
+
+    <section class="site-banner">
+        <h3>Welcome</h3>
+        <p>Some text to write</p>
+    </section>
+
+    <main class="site-content">
+        {{ content }}
+    </main>
+    
+    <footer class="site-footer">
+
+    </footer>
+</body>
+
+</html>
